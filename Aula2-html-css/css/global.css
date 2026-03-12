@@ -1,0 +1,35 @@
+body {
+    background-color: #c8d6e5;
+}
+
+.container{
+    padding: 8px;
+    border: 1px solid #576574;
+    border-radius: 8px;
+}
+
+.box{
+    background-color: #8395a7;
+    border: 1px solid #576574;
+    border-radius: 8px;
+    padding: 4px
+}
+
+.componente{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 8px;
+    margin: 8px;
+}
+
+.botao{
+    width: 10em;
+    height: 2em;
+    border-radius: 12px;
+}
+.confirma{
+    background-color: green;
+}
+.novo{
+    background-color: blue;
+}
