@@ -1,0 +1,42 @@
+.container {}
+
+body {
+    background-color: #c8d6e5;
+}
+
+header {
+    padding: 8px;
+    border: 1px solid #576574;
+    border-radius: 8px;
+}
+
+.container>div {
+    display: flex;
+    flex-direction: row;
+}
+
+.container>div>aside,
+.container main {
+    margin: 12px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.form-box>label{
+    margin-bottom: 2px;
+}
+
+.form-box>input {
+    reading-order: 12px;
+    border: none;
+    min-height: 24px;
+}
+
+img:hover{
+    border: 10px solid #000;
+    transform: rotate(90deg);
+}
