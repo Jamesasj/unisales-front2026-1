@@ -72,7 +72,7 @@ body {
 	transform: translateY(-1px);
 }
 
-.container button {
+ .btn {
 	margin-top: 8px;
 	width: 100%;
 	height: 46px;
@@ -88,12 +88,17 @@ body {
 	box-shadow: 0 10px 20px rgba(15, 118, 110, 0.25);
 }
 
-.container button:hover {
+ .excluir {
+	background: red;
+	box-shadow: 0 10px 20px rgba(144, 75, 48, 0.25);
+}
+
+.btn:hover {
 	transform: translateY(-2px);
 	filter: brightness(1.05);
 }
 
-.container button:active {
+.btn:active {
 	transform: translateY(0);
 }
 

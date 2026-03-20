@@ -1,4 +1,8 @@
 /// ao clicar no botao salvar a pessoa deve ser inclui na lista
+/** @ */
+const excluirLinha = (objTr) => {
+    objTr.remover()
+}
 
 const salvarNaLista = (pessoa) => {
     function createTd(value) {
@@ -10,10 +14,16 @@ const salvarNaLista = (pessoa) => {
     const tbl = document.getElementById('tbl');
     const tblBody = tbl.querySelector('tbody');
     const nElem = document.createElement('tr')
+    const btnExcluir = document.createElement('button');
+    btnExcluir.innerHTML = 'Excluir';
+    btnExcluir.className = 'btn excluir';
+
+    
     nElem.appendChild(createTd(pessoa.nome));
     nElem.appendChild(createTd(pessoa.idade));
     nElem.appendChild(createTd(pessoa.endereco));
-    
+    btnExcluir.onclick = ()=>{excluirLinha(nElem)};
+    nElem.appendChild(btnExcluir);
     tblBody.appendChild(nElem);
 }
 
