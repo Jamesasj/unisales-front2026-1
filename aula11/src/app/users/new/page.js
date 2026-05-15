@@ -14,6 +14,8 @@ export default function NewUserPage() {
         setUser({...user, password:newValue}) //'...' destructor 
     }
 
+
+
     return (
         <>
             <h1>Novo Usuario - {user.name}</h1>
@@ -23,6 +25,18 @@ export default function NewUserPage() {
                 <FormInput name='e-mail' value={user.email} onChange={changeEmail}  />
                 <FormInput name='Senha' value={user.password} onChange={changePass} type='password'  />
             </div>
+            <button onClick={()=>{
+                fetch('https://jsonplaceholder.typicode.com/users', {
+                    method:'POST',
+                    body:JSON.stringify(user)
+                }).then((res)=>{
+                    if(res.status==201){
+                        alert('tudo certo')
+                    } else {
+                        alert('tudo errado!')
+                    }
+                })
+            }}>Salvar</button>
         </>
     )
 }

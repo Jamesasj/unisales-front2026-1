@@ -1,0 +1,14 @@
+.list-users {
+    border: 1px black solid;
+}
+
+.list-users>* {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-header {
+    display: flex;
+    flex-direction: column;
+}

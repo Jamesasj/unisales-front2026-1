@@ -1,7 +1,0 @@
-.list-users{
-    border: 1px black solid;
-}
-
-.list-users > * {
-    padding: 4px;
-}
