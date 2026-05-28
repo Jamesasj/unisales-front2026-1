@@ -22,10 +22,7 @@ async function post(uri, body) {
     }
 
     const obj = await res.json();
-
     return obj.data;
-
-
 }
 
 async function get(uri) {
