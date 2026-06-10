@@ -17,7 +17,7 @@ async function post(uri, body) {
     });
 
     if (res.status > 400 && res.status < 500) {
-        alert('nao autorizado')
+        console.log ('nao autorizado')
         return res.status;
     }
 
@@ -36,7 +36,8 @@ async function get(uri) {
     });
 
     if (res.status > 400 && res.status < 500) {
-        alert('nao autorizado')
+        console.log ('nao autorizado')
+        location.href = 'login'
         return res.status;
     }
 
